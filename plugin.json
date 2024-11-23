@@ -1,0 +1,32 @@
+{
+	"id": "nodebb-plugin-paypal-subscription",
+	"url": "https://github.com/elkd/nodebb-plugin-paypal-subscription",
+	"library": "./library.js",
+	"hooks": [
+		{
+			"hook": "static:app.load", "method": "init"
+		},
+		{
+			"hook": "filter:admin.header.build", "method": "addAdminNavigation"
+		},
+		{
+			"hook": "filter:user.customSettings", "method": "addSubscriptionSettings"
+		},
+		{
+			"hook": "filter:helpers.notAllowed", "method": "redirectToSubscribe"
+		}
+	],
+	"staticDirs": {
+		"static": "./static"
+	},
+	"less": [
+		"static/style.less"
+	],
+	"scripts": [
+		"static/lib/main.js"
+	],
+	"acpScripts": [
+		"static/lib/admin.js"
+	],
+	"templates": "static/templates"
+}

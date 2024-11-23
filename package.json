@@ -1,0 +1,35 @@
+{
+  "name": "nodebb-plugin-paypal-subscription",
+  "version": "1.0.1",
+  "description": "Monetize your forum with paid subscription-based access to certain categories",
+  "main": "library.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elkd/nodebb-plugin-paypal-subscription.git"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "paypal",
+    "subscriptions",
+    "monetization"
+  ],
+  "author": "Elisha Kingdom <el@obrisk.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elkd/nodebb-plugin-paypal-subscription/issues"
+  },
+  "nbbpm": {
+    "compatibility": "^3.0.0"
+  },
+  "dependencies": {
+    "paypal-recurring": "^1.1.0"
+  },
+  "homepage": "https://github.com/elkd/nodebb-plugin-paypal-subscription#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
